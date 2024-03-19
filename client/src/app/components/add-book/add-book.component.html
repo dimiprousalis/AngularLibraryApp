@@ -1,0 +1,20 @@
+<div class="add-book">
+    <h1>Add a Book</h1>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label for="title">Title</label>
+            <input type="text" name="title" [(ngModel)]="title" id="title" placeholder="Add Title" />
+        </div>
+        <div class="form-control">
+            <label for="author">Author</label>
+            <input type="text" name="author" [(ngModel)]="author" id="author" placeholder="Add Author" />
+        </div>
+
+        <div class="form-control">
+            <label for="publicationYear">Publication Year</label>
+            <input type="text" name="publicationYear" [(ngModel)]="publicationYear" id="publicationYear"
+                placeholder="Add Publication Year" />
+        </div>
+        <input type="submit" value="Save Book" class="btn-add" />
+    </form>
+</div>

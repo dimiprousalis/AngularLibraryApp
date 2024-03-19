@@ -1,0 +1,7 @@
+<div class="book-item-container">
+    <div>{{book.title}}</div>
+    <div>{{book.author}}</div>
+    <div>{{book.publicationYear}}</div>
+    <div><fa-icon class="tash" (click)="onDelete(book)" [icon]="faTrashCan"
+            [ngStyle]="{ color: 'red', padding: '5px', margin: 'auto' }" ></fa-icon></div>
+</div>

@@ -1,0 +1,21 @@
+<div class="books-layout">
+    <app-add-book (onAddBook)="addBook($event)"></app-add-book>
+
+    <div class="books-container">
+        <header>
+            <h1>Title</h1>
+            <h1>Author</h1>
+            <h1>Publication Year</h1>
+            <h1>Delete</h1>
+        </header>
+        <app-book-item *ngFor="let book of books" [book]="book" (onDeleteBook)="deleteBook(book)">
+        </app-book-item>
+
+
+        <div class="pagination">
+            <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+            <span>{{currentPage}} / {{totalPages}}</span>
+            <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+          </div>
+    </div>
+</div>

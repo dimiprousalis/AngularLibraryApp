@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+.header-container {
+    font-size: 60px;
+    padding: 20px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    border: 10px solid black;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    text-decoration: underline $orange;
+    text-underline-offset: 10px;
+    margin: 0;
+
+    @include mobile {
+        font-size: 30px;
+    }
+    
+}

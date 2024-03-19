@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+//COLORS
+$orange: #ecb899;
+$light-green: #cbddd1;
+$white-tr:rgba(255, 255, 255, 0.719);
+
+//SCREEN SIZE
+@mixin mobile {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(90deg, $light-green 35%, $orange 35%, $orange 1%);  
+}

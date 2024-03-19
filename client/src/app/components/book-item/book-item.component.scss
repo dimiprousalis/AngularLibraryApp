@@ -1,0 +1,15 @@
+@import '../../../styles.scss';
+
+.book-item-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: $white-tr;
+    font-weight: bold;
+    text-align: center;
+
+    div {
+        border: 1px solid black;
+        width: 100%;
+        padding: 10px;
+    }
+}
